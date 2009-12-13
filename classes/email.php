@@ -59,8 +59,6 @@ class Email {
 				// Create a sendmail connection
 				$transport = Swift_SendmailTransport::newInstance(empty($config['options']) ? "/usr/sbin/sendmail -bs" : $config['options']);
 
-				// Set the timeout to 5 seconds
-				$transport->setTimeout(5);
 			break;
 			default:
 				// Use the native connection
