@@ -106,7 +106,7 @@ class Email {
 
 			foreach ($to as $method => $set)
 			{
-				if ( ! in_array($method, array('to', 'cc', 'bcc')))
+				if ( ! in_array($method, array('to', 'cc', 'bcc'), true))
 				{
 					// Use To: by default
 					$method = 'to';
